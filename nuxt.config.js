@@ -4,6 +4,9 @@ export default {
   /*
   ** Headers of the page
   */
+ router: {
+     base: '/dist/'
+ },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -23,7 +26,8 @@ export default {
   ** Global CSS
   */
   css: [
-      '~/css/main.css'
+      '~/css/main.css',
+      '~/css/normalize.css',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -37,10 +41,12 @@ export default {
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
   ],
+//   rootDir: 'dist/',
   /*
   ** Build configuration
   */
   build: {
+    //   publicPath: 'https://pintos.cn/dist/',
     postcss: {
       preset: {
         features: {
@@ -51,7 +57,10 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-    }
+    // extend(config, ctx) {
+    //     if(!ctx.isDev){
+    //         config.output.publicPath = './_nuxt/';
+    //     }
+    // }
   }
 }

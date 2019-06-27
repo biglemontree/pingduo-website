@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class>
+    <div >
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
+            <a class="navbar-item" >
               <img src="~/assets/logo.png" width="112" height="28">
             </a>
 
@@ -23,10 +23,10 @@
 
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item">智能门锁</a>
-              <a class="navbar-item">关于我们</a>
-              <a class="navbar-item">品牌加盟</a>
-              <a class="navbar-item">下载APP</a>
+              <nuxt-link class="navbar-item nuxt-link-active" to="/">智能门锁</nuxt-link>
+              <nuxt-link class="navbar-item" to="/aboutus/company-produce">关于我们</nuxt-link>
+              <nuxt-link class="navbar-item" to="/join">品牌加盟</nuxt-link>
+              <nuxt-link class="navbar-item" to="/">下载APP</nuxt-link>
               <div class="navbar-item">
                 <div class="buttons">
                   <a class="button online-buy">在线购买</a>
@@ -138,11 +138,12 @@
 <style >
 .navbar {
   background: #3e3e3e;
-  height: 60px;
+  height: 31px;
 }
 .navbar-item {
   color: #888;
-  font-size: 18px;
+  font-size: 9px;
+  margin-right: 55px;
 }
 .online-buy {
   width: 100px;
