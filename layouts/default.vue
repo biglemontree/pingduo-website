@@ -135,15 +135,19 @@
   </div>
 </template>
 
-<style >
+<style scoped lang="less">
 .navbar {
   background: #3e3e3e;
-  height: 31px;
+  height: 60px;
+  .container {
+      height: 100%;
+  }
 }
 .navbar-item {
   color: #888;
-  font-size: 9px;
+  font-size: 18px;
   margin-right: 55px;
+
 }
 .online-buy {
   width: 100px;

@@ -28,11 +28,11 @@
         <div class="is-flex-desktop justify-center item-wrap">
           <div class="left-desc has-text-centered">
             <div class="smart-lock flex items-center justify-center">
-              <h2 class="mr-22px">智能门锁</h2>
+              <h2 class="mr-22px is-size-1-mobile">智能门锁</h2>
               <img src="~/assets/index/tb_m1.png" alt>
             </div>
             <div class="lock-desc">开启瞬间,点亮生活</div>
-            <p class="desc fs-9px">
+            <p class="desc fs-18px">
               全自动智能锁M1，采用手机CNC工艺，双重专利认证，结合
               人工智能算法，让生活更便捷。
             </p>
@@ -52,7 +52,7 @@
               <img src="~/assets/index/tp_p1.png" alt>
             </div>
             <div class="lock-desc">如此快捷,一握即开</div>
-            <p class="desc fs-9px">智能指纹锁P1，创新门把手设计，超长续航能力，多种开门方式，轻松满足每个家庭成员需求。
+            <p class="desc fs-18px">智能指纹锁P1，创新门把手设计，超长续航能力，多种开门方式，轻松满足每个家庭成员需求。
             </p>
             <div class="know-more">
                 <a href>进一步了解</a>
@@ -69,7 +69,7 @@
               <img src="~/assets/index/tp_t1.png" alt>
             </div>
             <div class="lock-desc">全自动,更未来</div>
-            <p class="desc fs-9px">全自动智能锁T1，采用imd加工工艺，高安全级别锁芯，高适配率无需改孔，想装就装。
+            <p class="desc fs-18px">全自动智能锁T1，采用imd加工工艺，高安全级别锁芯，高适配率无需改孔，想装就装。
             </p>
             <div class="know-more">
                 <a href>进一步了解</a>
@@ -101,9 +101,9 @@ export default {
         justify-content: center;
         // width: 513px;
         .left-desc {
-            padding-top: 75px;
-            margin-right: 36px;
-            width: 265px;
+            padding-top: 100px;
+            margin-right: 62px;
+            width: 540px;
         }
         .p1-left {
             order: 2;
@@ -123,42 +123,53 @@ export default {
 }
 .left-desc {
     .lock-desc {
-        font-size: 28px;
-        margin: 14px 0 17px;
+        font-size: 55px;
+        margin: 28px 0 34px;
     }
     .goods {
-        margin: 13px 0 34px;
+        margin: 26px 0 0;
     }
 }
 .pic-m1 {
-    width: 185px;
-    height: 333px;
+    width: 370px;
+    height: 666px;
 }
 .pic-p1 {
-    width: 162px;
-    height: 337px;
+    width: 323px;
+    height: 674px;
 }
 .pic-t1 {
-    width: 211px;
-    height: 336px;
+    width: 422px;
+    height: 671px;
 }
 .know-more {
     color: #1AA0FB;
-    font-size: 12px;
-    margin: 41px 0 35px;
+    font-size: 24px;
+    margin: 64px 0 35px;
 }
 @media screen and (max-width: 768px) { 
     .section {  
         .container {
-            width: 222px;
         }
+    }
+    .pic-m1 {
+        width: 185px;
+        height: 333px;
+    }
+    .pic-p1 {
+        width: 162px;
+        height: 337px;
+    }
+    .pic-t1 {
+        width: 211px;
+        height: 336px;
     }
 }
 .top-lock {
   width: 500px;
-  height: 65px;
+  height: 130px;
   img {
-      height: 32px;
+      height: 64px;
   }
 }
 .lock-body {
@@ -169,9 +180,9 @@ export default {
 }
 .smart-lock {
     h2 {
-        font-size:21px;
+        font-size:42px;
         color:rgba(52,150,246,1);
-        margin-right: 11px;
+        margin-right: 22px;
     }
 }
 </style>
