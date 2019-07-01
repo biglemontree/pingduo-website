@@ -20,7 +20,6 @@
               <span aria-hidden="true"></span>
             </a>
           </div>
-
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
               <nuxt-link class="navbar-item nuxt-link-active" to="/">智能门锁</nuxt-link>

@@ -38,7 +38,9 @@
             </p>
             <img class="goods" src="~/assets/index/tp_jdj.png" alt>
             <div class="know-more">
-                <a href>进一步了解</a>
+                <!-- <a href>进一步了解</a> -->
+                <nuxt-link class="navbar-item nuxt-link-active" to="/m1">进一步了解</nuxt-link>
+
             </div>
           </div>
           <div class="pic-neck has-text-centered">
@@ -72,7 +74,7 @@
             <p class="desc fs-18px">全自动智能锁T1，采用imd加工工艺，高安全级别锁芯，高适配率无需改孔，想装就装。
             </p>
             <div class="know-more">
-                <a href>进一步了解</a>
+                <a href="/">进一步了解</a>
             </div>
           </div>
           <div class="pic-neck has-text-centered">
@@ -143,7 +145,10 @@ export default {
     height: 671px;
 }
 .know-more {
-    color: #1AA0FB;
+    a {
+        color: #1AA0FB !important;
+        text-align: center;
+    }
     font-size: 24px;
     margin: 64px 0 35px;
 }
