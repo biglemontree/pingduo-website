@@ -59,6 +59,12 @@ export default {
 
 <style lang="less" scoped>
 .top-link {
+    // float: left;
+    position: absolute;
+    width: 100%;
+    opacity: 0.7;
+    // background: transparent;
+    z-index: 999;
     height: 117px;
     .content {
         width: 546px;

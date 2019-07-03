@@ -25,7 +25,12 @@
               <nuxt-link class="navbar-item nuxt-link-active" to="/">智能门锁</nuxt-link>
               <nuxt-link class="navbar-item" to="/aboutus/company-produce">关于我们</nuxt-link>
               <nuxt-link class="navbar-item" to="/join">品牌加盟</nuxt-link>
-              <nuxt-link class="navbar-item" to="/">下载APP</nuxt-link>
+              <nuxt-link class="navbar-item down-app" to="/">下载APP
+                <div class="down-qrcode">
+                    <img src="~/assets/footer/home.png" alt="">
+                    <img src="~/assets/footer/qr-house.png" alt="">
+                </div>
+              </nuxt-link>
               <div class="navbar-item">
                 <div class="buttons">
                   <a class="button online-buy">在线购买</a>
@@ -47,7 +52,7 @@
                 <p>P1</p>
                 <p>T1</p>
                 <p>H1</p>
-                <p>配件</p>
+                <!-- <p>配件</p> -->
                 </div>
                 <div class="column">
                 <div class="title">关于我们</div>
@@ -61,9 +66,9 @@
                 <div class="title">品牌加盟</div>
                 <p>加盟</p>
                 </div>
-                <div class="column is-4">
+                <div class="column is-4 relative">
                     <div class="title">APP下载</div>
-                    <div class="app-qr flex">
+                    <div class="app-qr  ">
                         
                         <img class="" src="~/assets/footer/home.png" alt="">
                         <img class="" src="~/assets/footer/qr-house.png" alt="">
@@ -97,9 +102,6 @@
           </li>
           <li>
             <a>H1</a>
-          </li>
-          <li>
-            <a>配件</a>
           </li>
         </ul>
         <p class="menu-label">关于我们</p>
@@ -146,7 +148,28 @@
   color: #888;
   font-size: 18px;
   margin-right: 55px;
-
+  img {
+      max-height: none;
+  }
+}
+.down-app {
+    position: relative;
+    .down-qrcode {
+        position: absolute;
+        // height: 0px;
+        img {
+            display: none;
+        }
+    }
+}
+.down-app:hover {
+    .down-qrcode {
+        width: 270px;
+        top: 70px;
+        img {
+            display: inline-block;
+        }
+    }
 }
 .online-buy {
   width: 100px;
@@ -166,8 +189,8 @@
     border-bottom: 1px solid #DADADA;
 }
 .app-qr img{
-    width:62px;
-    height:62px;
+    width:124px;
+    height:124px;
     margin-right: 16px;
 }
 .copy .tel{

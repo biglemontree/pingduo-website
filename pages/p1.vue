@@ -68,7 +68,7 @@
       </div>
     </div>
     <div class="bg-3">
-      <div class="container">
+      <div style="padding-top: 69px;">
         <div class="word-title has-text-centered">
           <h2>双轴承设计 防止下挂</h2>
           <p class="fs-26px">
@@ -76,14 +76,14 @@
             使用10年依然不下垂。
           </p>
         </div>
-        <div class="c-fff icon-tip">
+        <div class="container c-fff icon-tip">
           <div class="circle-c c-fff flex justify-center items-center">C级</div>
           <div class="fs-26px">锁芯等级</div>
         </div>
       </div>
     </div>
 
-    <div class="bg-5" style="padding-top: 71px">
+    <div class="bg-4" style="padding-top: 71px">
       <div class="word-title has-text-centered">
         <h2>虚位密码</h2>
         <p class="fs-26px" style="margin: 70px 0 30px;">
@@ -97,37 +97,61 @@
         <p class="fs-20px" style="margin: 20px 0 0px;">15位数字内含正确密码</p>
       </div>
     </div>
-    <div class="bg-4">
-      <div class="container">
-        <div class="word-title has-text-left" style="width: 391px">
-          <h2>多种开锁方式 方便快捷</h2>
+    <div class="bg-5">
+      <div class style="padding:78px 5% 79px;">
+        <div class="word-title ">
+          <h2 class="has-text-centered">多种开锁方式 方便快捷</h2>
           <p class="fs-26px">
             指纹、密码、智能指纹锁感应卡、钥匙、多方式齐上阵，集科技与实用合二为一，无论何时何地都能轻松开门，
             让生活更便捷。
           </p>
           <div class="flex justify-between">
-              <div>
-                <img src="~/assets/p1/4_2.png" alt>
-                <div>智能指纹锁感应卡解锁</div>
-              </div>
-              <div>
-                <img src="~/assets/p1/4_2.png" alt>
-                <div>指纹解锁</div>
-              </div>
-              <div>
-                <img src="~/assets/p1/4_2.png" alt>
-                <div>数字密码解锁</div>
-              </div>
-              <div>
-                <img src="~/assets/p1/4_2.png" alt>
-                <div>钥匙解锁</div>
-              </div>
+            <div>
+              <img src="~/assets/p1/5_1.png" alt>
+              <div class="fs-26px center" style="margin-top: 32px;">智能指纹锁感应卡解锁</div>
+            </div>
+            <div>
+              <img src="~/assets/p1/5_2.png" alt>
+              <div class="fs-26px center" style="margin-top: 32px;">指纹解锁</div>
+            </div>
+            <div>
+              <img src="~/assets/p1/5_3.png" alt>
+              <div class="fs-26px center" style="margin-top: 32px;">数字密码解锁</div>
+            </div>
+            <div>
+              <img src="~/assets/p1/5_4.png" alt>
+              <div class="fs-26px center" style="margin-top: 32px;">钥匙解锁</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <div class="bg-6"></div>
+    <div class="bg-6">
+      <div class="container">
+        <div class="word-title has-text-centered">
+          <h2>C级锁芯 防技术开启</h2>
+          <p class="fs-26px">
+            采用C级防盗锁芯,有效防止270分钟内技术开启，隐藏式锁孔设计美观大方，保障家庭的
+            安全与美好。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="background: #eee;">
+        <div class="container c-000" >
+        <div class="word-title c-000 has-text-centered">
+            <h2 class="c-000">无时无刻确保安全</h2>
+            <p class="fs-26px c-000">
+            可远程实时接收和查看开锁记录，家中成员谁出门了，谁回家了，一目了然，而市面上绝大多数品牌的门
+            锁仅支持在家查看记录
+            </p>
+            <img src="~/assets/p1/7_1.png" style="margin: auto" alt="">
+            <div class="c-000 fs-36px" style="margin: 23px 0 28px;">华为-智能家居</div>
+            <div class="c-000 fs-34px" style="margin-bottom: 27px;">给你不一样的生活体验</div>
+            <img src="~/assets/p1/7_2.png" style="margin: auto" alt="">
+
+        </div>
+        </div>
     </div>
   </div>
 </template>
@@ -156,7 +180,7 @@ img {
     height: 1079px;
   }
   .bg-2 {
-    height: 1106px;
+    height: 1082px;
     .up-arrow {
       color: #1670eb;
       font-size: 28px;
@@ -169,7 +193,7 @@ img {
   .bg-3 {
     height: 1249px;
     .icon-tip {
-      margin-left: 155px;
+      margin-left: 20%;
       .circle-c {
         font-size: 32px;
         z-index: 1000;
@@ -182,13 +206,17 @@ img {
     }
   }
   .bg-4 {
-    height: 931px;
+    height: 1144px;
   }
   .bg-5 {
-    height: 975px;
+    height: 1029px;
+    img {
+      width: 361px;
+      height: 506px;
+    }
   }
   .bg-6 {
-    height: 842px;
+    height: 1089px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -237,7 +265,7 @@ img {
   background: url("../assets/p1/bg_4.png");
 }
 .bg-5 {
-  background: url("../assets/m1/5_2.png");
+  background: url("../assets/p1/bg_5.png");
 }
 .bg-6 {
   background: url("../assets/p1/bg_6.png");

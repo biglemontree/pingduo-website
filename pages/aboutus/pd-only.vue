@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pd-only">
     <div class="bg-f2 gray-block is-hidden-mobile"></div>
     <div class="container has-text-centered">
       <div class="line">
@@ -84,6 +84,9 @@
 
 <style lang="less" scoped>
 @media screen and (min-width: 1024px) {
+    .pd-only {
+        padding-top: 117px;
+    }
   .line {
     border-bottom: 3px dashed rgba(129, 129, 129, 0.25);
     padding-bottom: 45px;
