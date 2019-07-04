@@ -34,7 +34,9 @@
                 </nuxt-link>
           </div>
       </div>
-      <nuxt-child/>
+      <div class="wrap-content">
+        <nuxt-child/>
+      </div>
   </div>
 </template>
 
@@ -59,8 +61,8 @@ export default {
 
 <style lang="less" scoped>
 .top-link {
-    // float: left;
-    position: absolute;
+    position: sticky;
+    top: 60px;
     width: 100%;
     opacity: 0.7;
     // background: transparent;
@@ -69,12 +71,12 @@ export default {
     .content {
         width: 546px;
         margin: 0 auto;
-        height: 100%;
+        // height: 100%;
         padding: 33px 0 15px;
     }
 }
-.router-link-active {
-
+.wrap-content {
+    transform: translateY(-119px);
 }
 </style>
 

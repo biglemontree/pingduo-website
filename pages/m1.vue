@@ -35,10 +35,10 @@
             颜值与黑科技并存。
           </p>
         </div>
-        <div class="rotate-img">
-
+        <div class="rotate-img is-hidden-mobile">
             <img  src="~/assets/m1/1_1.png" alt>
             <img  class="pc-pic" src="~/assets/m1/1_2.png" alt>
+            <!-- <img  src="~/assets/m_m1/bg_1.png" alt> -->
         </div>
       </div>
     </div>
@@ -49,6 +49,7 @@
           <p class="fs-26px is-size-5-mobile">室内开门时，需同时碰触背面感应区+按压开锁键，才可开门。以防小孩不小心按压开门键将门误开。</p>
         </div>
       </div>
+        <img  class="is-hidden-desktop" src="~/assets/m_m1/bg_2.png" alt>
     </div>
     <div class="bg-3">
       <div class="container">
@@ -64,7 +65,7 @@
     </div>
     <div class="bg-4">
       <div class="container">
-        <div class="word-title has-text-left" style="width: 391px;margin-left: 300px;">
+        <div class="word-title has-text-left" >
           <h2 class="is-size-2-mobile">报警功能</h2>
           <p class="fs-26px is-size-5-mobile">
             当门锁被撬时，门锁自身将发出
@@ -72,7 +73,7 @@
             机的华为智能家居APP上。
           </p>
         </div>
-        <div style="width: 391px;margin-left: 300px;" class="flex justify-center">
+        <div class="flex justify-center is-hidden-mobile">
           <img src="~/assets/m1/4_2.png" alt>
           <div>安全加倍</div>
         </div>
@@ -123,21 +124,39 @@ img {
     .item-wrap {
         margin-bottom: 120px;
     }
+    .word-title {
+        color: #ffffff;
+        h2 {
+            font-size: 60px;
+            margin: 50px 0 40px;
+        }
+        p {
+            margin-bottom: 87px;
+        }
+    }
     .bg-1 {
+        background: url("../assets/m1/bg_1.png");
         .pc-pic {
             margin-top: 60px;padding-bottom:97px;
         }
     }
   .bg-2 {
+    background: url("../assets/m1/2_1.png");
     height: 1106px;
   }
   .bg-3 {
+    background: url("../assets/m1/3_1.png");
     height: 1249px;
   }
   .bg-4 {
+    background: url("../assets/m1/4_1.png");
     height: 931px;
+    .word-title {width: 391px;margin-left: 300px;}
+    .flex {width: 391px;margin-left: 300px;}
   }
   .bg-5 {
+  background: url("../assets/m1/5_2.png");
+
     height: 975px;
   }
   .bg-6 {
@@ -160,11 +179,10 @@ img {
     margin: 30px auto 0;
   }
   .bg-1 {
+    // background: black;
+    background: url("../assets/m_m1/bg_1.png");
+
       min-height: 600px;
-      .rotate-img {
-          margin-left: 100px;
-          transform: rotate(90deg);
-      }
   }
   .bg-2 {
       padding: 60px 0 200px;
@@ -187,52 +205,53 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .section {
-    .container {
-    }
-  }
   .pic-m1 {
     width: 185px;
     height: 333px;
   }
+  h2 {margin-bottom: 20px;}
+  .bg-1 {
+        padding: 50px 20px 0px;
+
+        background-size: contain;
+        background-position: bottom;
+  }
+    // .bg-1,
+    .bg-2,
+    .bg-3, 
+    .bg-4, 
+    .bg-5 {
+        padding: 50px 20px 0px;
+        min-height: 500px;
+        background-size: contain;
+        background-position: bottom;
+    }
+  
+    .bg-3 {background: url("../assets/m_m1/bg_3.png") bottom no-repeat ;}
+    .bg-4 {background: url("../assets/m_m1/bg_4.png");background-size: 100%;}
+    .bg-5 {background: url("../assets/m_m1/bg_5.png");background-size: 100%;}
+}
+.word-title {
+    color: #ffffff;
 }
 
-.bg-1 {
-  background: url("../assets/m1/bg_1.png");
-}
 .bg-2 {
-  background: url("../assets/m1/2_1.png") no-repeat ;
-  background-size: contain;
-    background-position: bottom;
-    background-color: black;
-  
+  background: url("../assets/m1/2_1.png");
 }
 .bg-3 {
-  background: url("../assets/m1/3_1.png") bottom no-repeat ;
   min-height: 600px;
   background-size: contain;
 //     background-position: bottom;
     background-color: black;
 }
 .bg-4 {
-  background: url("../assets/m1/4_1.png");
 }
 .bg-5 {
-  background: url("../assets/m1/5_2.png");
 }
 .bg-6 {
   background: url("../assets/m1/6_1.png");
   background-size: 100%;
 }
 
-.word-title {
-  color: #ffffff;
-  h2 {
-    font-size: 60px;
-    margin: 50px 0 40px;
-  }
-  p {
-    margin-bottom: 87px;
-  }
-}
+
 </style>
