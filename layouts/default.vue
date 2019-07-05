@@ -89,8 +89,8 @@
             </div>
         </div>
       <aside class="menu is-mobile is-hidden-desktop">
-        <p class="menu-label">智能门锁</p>
-        <ul class="menu-list">
+        <p class="menu-label" @click="showIem(1)">智能门锁</p>
+        <ul class="menu-list" v-show="footerItm==1">
           <li>
             <a>M1</a>
           </li>
@@ -104,8 +104,8 @@
             <a>H1</a>
           </li>
         </ul>
-        <p class="menu-label">关于我们</p>
-        <ul class="menu-list">
+        <p class="menu-label" @click="showIem(2)">关于我们</p>
+        <ul class="menu-list" v-show="footerItm==2">
           <li>
             <a>公司简介</a>
           </li>
@@ -119,22 +119,23 @@
             <a>售后服务</a>
           </li>
         </ul>
-        <p class="menu-label">品牌加盟</p>
-        <ul class="menu-list">
+        <p class="menu-label" @click="showIem(3)">品牌加盟</p>
+        <!-- <ul class="menu-list">
           <li>
             <a>加盟</a>
           </li>
-        </ul>
+        </ul> -->
         <p class="menu-label">APP下载</p>
-        <ul class="menu-list">
+        <!-- <ul class="menu-list">
           <li>
             <a>加盟</a>
           </li>
-        </ul>
+        </ul> -->
       </aside>
     </footer>
   </div>
 </template>
+
 
 <style scoped lang="less">
 .navbar {
@@ -144,6 +145,9 @@
       height: 100%;
   }
 }
+.navbar-brand, .navbar-tabs{height: 60px;}
+.navbar-burger {color: #fff;}
+.navbar-burger {height: 100%;}
 .navbar-item {
   color: #888;
   font-size: 18px;
@@ -206,6 +210,17 @@
 export default {
   layout: "default",
   components: {},
+  data() {
+      return {
+          footerItm: 0
+      }
+  },
+  methods: {
+
+    showIem(i) {
+        this.footerItm=i
+    }
+  },
   mounted() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(

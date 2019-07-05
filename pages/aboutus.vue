@@ -75,8 +75,10 @@ export default {
         padding: 33px 0 15px;
     }
 }
-.wrap-content {
-    transform: translateY(-119px);
+@media screen and (min-width: 1024px) {
+    .wrap-content {
+        transform: translateY(-119px);
+    }
 }
 </style>
 
