@@ -2,7 +2,7 @@
   <div>
     <div class="container is-flex-desktop justify-center item-wrap">
       <div class="left-desc">
-        <div>
+        <div class="has-text-centered-mobile">
           <img class="icon-m1" src="~/assets/p1/i_pd.png" alt />
         </div>
         <div class="lock-desc is-size-3-mobile has-text-centered-mobile">如此快捷,一握即开</div>
@@ -10,7 +10,7 @@
           class="desc fs-24px is-size-5-mobile has-text-centered-mobile"
         >活体指纹识别 | 瑞典FPC芯片 | 精致外观工艺 | 人工智能算法</p>
         <div class="icons flex">
-          <div class="has-text-centered">
+          <div class="icon-item has-text-centered">
             <img src="~/assets/p1/icon_zwsb.png" style="magin:auto;" alt />
             <div class="fs-16px">活体指纹识别</div>
           </div>
@@ -160,9 +160,9 @@
 </template>
 
 <style lang="less" scoped>
-img {
-  display: block;
-}
+// img {
+//   display: block;
+// }
 @media screen and (min-width: 1024px) {
   .container {
     font-size: 0;
@@ -174,7 +174,8 @@ img {
       margin-right: 62px;
       width: 700px;
       .icon-item {
-        margin-left: 90px;
+        margin-right: 90px;
+        display: table;
       }
       .lock-desc {
         font-size: 60px;
@@ -192,7 +193,7 @@ img {
     color: #ffffff;
     h2 {
       font-size: 60px;
-      margin: 50px 0 40px;
+      padding: 50px 0 40px;
     }
     p {
       margin-bottom: 87px;
@@ -245,6 +246,7 @@ img {
   }
   .bg-4 {
     background: url("../assets/p1/bg_4.png");
+    background-size: 100%;
     padding-top: 71px;
     height: 1144px;
     .p-1 {margin: 70px 0 30px;}
@@ -274,22 +276,29 @@ img {
     padding-top: 49px;
     width: 70%;
     margin: auto;
+    
   }
   .lock-desc {
     margin: 15px 0;
   }
 
   .icons {
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 18px;
 
     .icon-item {
       margin-left: 10px;
+      display: table;
+      img {margin: 0 auto;width: 26px;}
+      div {
+
+        font-size: 8px !important;
+      }
       //   width: 26px;
     }
   }
   .pic-m1 {
-    margin: 30px auto 0;
+    margin: 30px auto 20px;
     width: 185px;
     height: 333px;
   }
@@ -343,7 +352,7 @@ img {
     // min-height: 500px;
     background-size: 100%;
     background-repeat: no-repeat;
-    // background-position: bottom;
+    background-color: black;
   }
 }
 .word-title {

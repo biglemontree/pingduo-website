@@ -30,15 +30,15 @@
     </div>
     <div class="bg-f2 gray-block is-hidden-mobile"></div>
     <div class=" lock-body">
-      <div class="container">
+      <div class="container px-20px">
         <div class="is-flex-desktop justify-center item-wrap item-1">
           <div class="left-desc has-text-centered">
             <div class="smart-lock flex items-center justify-center">
-              <h2 class="mr-22px is-size-1-mobile">智能门锁</h2>
+              <h2 class="mr-22px is-size-3-mobile">智能门锁</h2>
               <img src="~/assets/index/tb_m1.png" alt>
             </div>
-            <div class="lock-desc">开启瞬间,点亮生活</div>
-            <p class="desc fs-18px">
+            <div class="lock-desc is-size-3-mobile">开启瞬间,点亮生活</div>
+            <p class="desc fs-20px is-size-5-mobile">
               全自动智能锁M1，采用手机CNC工艺，双重专利认证，结合人工智能算法，让生活更便捷。
             </p>
             <img class="goods" src="~/assets/index/tp_jdj.png" alt>
@@ -52,14 +52,14 @@
           </div>
         </div>
       </div>
-        <div class="is-flex-desktop justify-center item-wrap bg-f2">
+        <div class="px-20px is-flex-desktop justify-center item-wrap bg-f2">
           <div class="left-desc has-text-centered p1-left">
             <div class="smart-lock flex items-center justify-center">
-              <h2 class="mr-22px">智能门锁</h2>
+              <h2 class="mr-22px is-size-3-mobile">智能门锁</h2>
               <img src="~/assets/index/tp_p1.png" alt>
             </div>
-            <div class="lock-desc">如此快捷,一握即开</div>
-            <p class="desc fs-18px">智能指纹锁P1，创新门把手设计，超长续航能力，多种开门方式，轻松满足每个家庭成员需求。
+            <div class="lock-desc is-size-3-mobile">如此快捷,一握即开</div>
+            <p class="desc fs-18px is-size-5-mobile">智能指纹锁P1，创新门把手设计，超长续航能力，多种开门方式，轻松满足每个家庭成员需求。
             </p>
             <div class="know-more">
                 <nuxt-link class="navbar-item nuxt-link-active flex justify-center" to="/p1">进一步了解</nuxt-link>
@@ -70,14 +70,14 @@
             <img class="pic-p1" src="~/assets/index/p1.png"  alt>
           </div>
         </div>
-        <div class="is-flex-desktop justify-center item-wrap">
+        <div class="px-20px is-flex-desktop justify-center item-wrap">
           <div class="left-desc has-text-centered">
             <div class="smart-lock flex items-center justify-center">
-              <h2 class="mr-22px">智能门锁</h2>
+              <h2 class="mr-22px is-size-3-mobile">智能门锁</h2>
               <img src="~/assets/index/tp_t1.png" alt>
             </div>
-            <div class="lock-desc">全自动,更未来</div>
-            <p class="desc fs-18px">全自动智能锁T1，采用imd加工工艺，高安全级别锁芯，高适配率无需改孔，想装就装。
+            <div class="lock-desc is-size-3-mobile">全自动,更未来</div>
+            <p class="desc fs-18px is-size-5-mobile">全自动智能锁T1，采用imd加工工艺，高安全级别锁芯，高适配率无需改孔，想装就装。
             </p>
             <div class="know-more">
                 <nuxt-link class="navbar-item nuxt-link-active flex justify-center" to="/t1">进一步了解</nuxt-link>
@@ -133,6 +133,9 @@ export default {
             margin-right: 36px;
         }
     }
+    .item-wrap {
+        margin-bottom: 100px;
+    }
     .item-1 {
         background: url('../assets/index/bg_logo.png') no-repeat center;
     }
@@ -146,8 +149,7 @@ export default {
     }
 }
 .item-wrap {
-    margin-bottom: 100px;
-    padding: 86px 0 80px;
+    padding: 86px 20px 80px;
 }
 .left-desc {
     .lock-desc {
@@ -205,6 +207,11 @@ export default {
     .pic-t1 {
         width: 211px;
         height: 336px;
+    }
+    .smart-lock {
+        img {
+            width: 52px;
+        }
     }
 }
 .top-lock {

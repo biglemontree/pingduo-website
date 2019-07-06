@@ -77,7 +77,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-6" style="padding:145px 0 0;">
+    <div class="bg-6" style="padding:145px 30px 0;">
       <img class="container" src="~/assets/t1/bg_6.png" alt />
     </div>
   </div>
@@ -182,7 +182,7 @@ img {
     }
   }
   .pic-m1 {
-    margin: 30px auto 0;
+    margin: 30px auto 20px;
     width: 185px;
     height: 333px;
   }
@@ -207,7 +207,7 @@ img {
     min-height: 500px;
     background-size: 100%;
     background-repeat: no-repeat;
-    // background-position: bottom;
+    background-color: black;
   }
 }
 

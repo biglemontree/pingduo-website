@@ -206,7 +206,7 @@ img {
     }
   }
   .pic-m1 {
-    margin: 30px auto 0;
+    margin: 30px auto 20px;
     width: 185px;
     height: 333px;
   }
@@ -230,6 +230,7 @@ img {
     height: 667px;
     background: url("../assets/m_m1/bg_4.png") no-repeat;
     background-size: 100%;
+    background-color: black;
   }
 
   .bg-5 {
@@ -254,6 +255,7 @@ img {
     background-size: 100%;
     background-repeat: no-repeat;
     // background-position: bottom;
+    background-color: black;
   }
 }
 .word-title {
