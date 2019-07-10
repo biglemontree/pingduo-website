@@ -32,8 +32,15 @@
 }
 .fs-30px {
   font-size: 30px;
-  /*px*/
 }
+.fs-34px {
+  font-size: 34px;
+}
+.fs-36px {
+  font-size: 36px;
+}
+.mt-18px {margin-top: 18px;}
+.p-20px {padding: 20px;}
 .px-20px {padding-left: 20px;padding-right: 20px;}
 .center {text-align: center;}
 .left {float: left;}
@@ -46,13 +53,14 @@
 
 .c-fff {color: #ffffff;}
 .c-000 {color: #000000;}
+.c-40 {color: #404040;}
 .bg-fff { background: #ffffff;}
 .bg-f2 { background-color: #f2f2f2;}
 .gray-block {height: 14px;}
 html {
   font-size: 12px !important;
 }
-body {line-height: 1;}
+body {line-height: 1 !important;}
 .page-title {
     font-size:48px;
 }

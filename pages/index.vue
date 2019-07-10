@@ -32,7 +32,7 @@
     <div class=" lock-body">
       <div class="container px-20px">
         <div class="is-flex-desktop justify-center item-wrap item-1">
-          <div class="left-desc has-text-centered">
+          <div class="m1-left left-desc has-text-centered">
             <div class="smart-lock flex items-center justify-center">
               <h2 class="mr-22px is-size-3-mobile">智能门锁</h2>
               <img src="~/assets/index/tb_m1.png" alt>
@@ -71,13 +71,13 @@
           </div>
         </div>
         <div class="px-20px is-flex-desktop justify-center item-wrap">
-          <div class="left-desc has-text-centered">
+          <div class="t1-left left-desc has-text-centered">
             <div class="smart-lock flex items-center justify-center">
               <h2 class="mr-22px is-size-3-mobile">智能门锁</h2>
               <img src="~/assets/index/tp_t1.png" alt>
             </div>
             <div class="lock-desc is-size-3-mobile">全自动,更未来</div>
-            <p class="desc fs-18px is-size-5-mobile">全自动智能锁T1，采用imd加工工艺，高安全级别锁芯，高适配率无需改孔，想装就装。
+            <p class="desc fs-20px is-size-5-mobile">全自动智能锁T1，采用imd加工工艺，高安全级别锁芯，高适配率无需改孔，想装就装。
             </p>
             <div class="know-more">
                 <nuxt-link class="navbar-item nuxt-link-active flex justify-center" to="/t1">进一步了解</nuxt-link>
@@ -127,7 +127,6 @@ export default {
         .left-desc {
             padding-top: 100px;
             margin-right: 62px;
-            width: 540px;
         }
         .pic-p1 {
             margin-right: 36px;
@@ -139,8 +138,17 @@ export default {
     .item-1 {
         background: url('../assets/index/bg_logo.png') no-repeat center;
     }
+    .m1-left {
+        width: 540px;
+    }
     .p1-left {
         order: 2;
+        width: 629px;
+        margin-left: 20px;
+    }
+    .t1-left {
+        width: 529px;
+        margin-right: 40px;
     }
 }
 @media screen and (max-width: 1023px) {
@@ -153,11 +161,11 @@ export default {
 }
 .left-desc {
     .lock-desc {
-        font-size: 55px;
-        margin: 28px 0 34px;
+        font-size: 48px;
+        margin: 28px 0 20px;
     }
     .goods {
-        margin: 26px 0 0;
+        margin: 31px 0 0;
     }
 }
 .pic-m1 {
@@ -189,13 +197,9 @@ export default {
 
     }
     font-size: 24px;
-    margin: 64px 0 35px;
+    margin: 60px 0 35px;
 }
 @media screen and (max-width: 768px) { 
-    .section {  
-        .container {
-        }
-    }
     .pic-m1 {
         width: 185px;
         height: 333px;

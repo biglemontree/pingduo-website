@@ -6,7 +6,7 @@
           <img class="icon-t1" src="~/assets/t1/i_t1.png" alt />
         </div>
         <div class="lock-desc is-size-2-mobile has-text-centered-mobile">全自动,更未来</div>
-        <p class="desc fs-24px is-size-5-mobile has-text-centered-mobile">高清LED显示屏 | 瑞典FPC指纹头 | 人体工程学把手 | 隐藏式钥匙孔</p>
+        <p class="desc fs-20px is-size-5-mobile has-text-centered-mobile">高清LED显示屏 | 瑞典FPC指纹头 | 人体工程学把手 | 隐藏式钥匙孔</p>
         <div class="icons flex">
           <div class="has-text-centered">
             <img src="~/assets/p1/icon_zwsb.png" style="magin:auto;" alt />
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="pic-neck has-text-centered">
-        <img class="pic-m1" src="~/assets/index/t1.png" alt />
+        <img class="pic-m1" src="~/assets/t1/t1.png" alt />
       </div>
     </div>
     <div class="bg-1">
@@ -117,7 +117,7 @@ img {
   }
   .word-title {
     h2 {
-      font-size: 60px;
+      font-size: 55px;
       margin: 50px 0 40px;
     }
     p {

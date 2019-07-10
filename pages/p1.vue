@@ -12,28 +12,28 @@
         <div class="icons flex">
           <div class="icon-item has-text-centered">
             <img src="~/assets/p1/icon_zwsb.png" style="magin:auto;" alt />
-            <div class="fs-16px">活体指纹识别</div>
+            <div class="fs-14px">活体指纹识别</div>
           </div>
           <div class="icon-item has-text-centered">
             <img src="~/assets/p1/i_2.png" style="magin:auto;" alt />
-            <div class="fs-16px">一键开启</div>
+            <div class="fs-14px">一键开启</div>
           </div>
           <div class="icon-item has-text-centered">
             <img src="~/assets/p1/i_3.png" style="magin:auto;" alt />
-            <div class="fs-16px">智能算法</div>
+            <div class="fs-14px">智能算法</div>
           </div>
           <div class="icon-item has-text-centered">
             <img src="~/assets/p1/i_4.png" alt />
-            <div class="fs-16px">双轴承防下挂</div>
+            <div class="fs-14px">双轴承防下挂</div>
           </div>
           <div class="icon-item has-text-centered">
             <img src="~/assets/p1/i_5.png" alt />
-            <div class="fs-16px">安全把控</div>
+            <div class="fs-14px">安全把控</div>
           </div>
         </div>
       </div>
       <div class="pic-neck has-text-centered">
-        <img class="pic-m1" src="~/assets/index/p1.png" alt />
+        <img class="pic-m1" src="~/assets/p1/p1.png" alt />
       </div>
     </div>
     <div class="bg-1">
@@ -70,7 +70,7 @@
       </div>
     </div>
     <div class="bg-3">
-      <div class="">
+      <div class="container">
         <div class="word-title has-text-centered">
           <h2 class="is-size-3-mobile">双轴承设计 防止下挂</h2>
           <p class="fs-26px is-size-5-mobile">
@@ -86,7 +86,7 @@
     </div>
 
     <div class="bg-4" style="">
-      <div class="word-title has-text-centered">
+      <div class="container word-title has-text-centered">
         <h2 class="is-size-3-mobile">虚位密码</h2>
         <p class="fs-26px p-1 is-size-5-mobile" >
           可有效防止他人通过指纹查看密码痕迹破解密码（比如不方便让同行的亲友看到正确密码，则可
@@ -100,8 +100,8 @@
       </div>
     </div>
     <div class="bg-5">
-      <div >
-        <div class="word-title">
+      <div class="">
+        <div class="word-title has-text-centered">
           <h2 class="has-text-centered is-size-3-mobile">多种开锁方式 方便快捷</h2>
           <p class="fs-26px is-size-5-mobile">
             指纹、密码、智能指纹锁感应卡、钥匙、多方式齐上阵，集科技与实用合二为一，无论何时何地都能轻松开门，
@@ -149,9 +149,9 @@
           </p>
           <div class="is-hidden-touch">
             <img src="~/assets/p1/7_1.png" style="margin: auto" alt />
-            <div class="c-000 fs-36px is-size-3-mobile" style="margin: 23px 0 28px;">华为-智能家居</div>
-            <div class="c-000 fs-34px is-size-3-mobile" style="margin-bottom: 27px;">给你不一样的生活体验</div>
-            <img src="~/assets/p1/7_2.png" style="margin: auto" alt />
+            <div class="c-40 fs-36px is-size-3-mobile" style="margin: 23px 0 28px;font-weight:bold;">华为-智能家居</div>
+            <div class="c-40 fs-34px is-size-3-mobile" style="margin-bottom: 27px;">给你不一样的生活体验</div>
+            <!-- <img src="~/assets/p1/7_2.png" style="margin: auto" alt /> -->
           </div>
         </div>
       </div>
@@ -163,10 +163,10 @@
 // img {
 //   display: block;
 // }
+
 @media screen and (min-width: 1024px) {
   .container {
-    font-size: 0;
-    padding-top: 109px;
+    padding-top: 120px;
     justify-content: center;
     // width: 513px;
     .left-desc {
@@ -174,8 +174,9 @@
       margin-right: 62px;
       width: 700px;
       .icon-item {
-        margin-right: 90px;
+        margin-right: 68px;
         display: table;
+        img {width: 51px !important;height: 55px !important;max-width: none}
       }
       .lock-desc {
         font-size: 60px;
@@ -192,8 +193,8 @@
   .word-title {
     color: #ffffff;
     h2 {
-      font-size: 60px;
-      padding: 50px 0 40px;
+      font-size: 55px;
+      margin: 0px 0 40px;
     }
     p {
       margin-bottom: 87px;
@@ -229,7 +230,6 @@
   }
   .bg-3 {
     background: url("../assets/p1/bg_3.png");
-    padding-top: 69px;
     height: 1249px;
     .icon-tip {
       margin-left: 20%;
@@ -246,15 +246,13 @@
   }
   .bg-4 {
     background: url("../assets/p1/bg_4.png");
-    background-size: 100%;
-    padding-top: 71px;
     height: 1144px;
     .p-1 {margin: 70px 0 30px;}
     .p-2 {margin: 20px 0 0px;}
   }
   .bg-5 {
     background: url("../assets/p1/bg_5.png");
-    padding:78px 5% 79px;
+    padding:120px 5% 79px;
     height: 1029px;
     img {
       width: 361px;
@@ -265,6 +263,10 @@
     height: 1089px;
     background: url("../assets/p1/bg_6.png");
     background-size: 100%;
+  }
+  .bg-7 {
+    background: url("../assets/p1/7_2.png");
+    height: 1220px;
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <img src="~/assets/brand-history/banner.png" alt>
-    <div class="content">
+    <div class="content px-20px">
       <div class="container is-desktop">
         <div class="brand-title">
           <div class="title">品牌历程</div>

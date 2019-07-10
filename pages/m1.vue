@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="pic-neck has-text-centered">
-        <img class="pic-m1" src="~/assets/index/m1.png" alt />
+        <img class="pic-m1" src="~/assets/m1/m1.png" alt />
       </div>
     </div>
     <div class="bg-1">
@@ -109,7 +109,7 @@ img {
 @media screen and (min-width: 1024px) {
   .container {
     font-size: 0;
-    padding-top: 109px;
+    padding-top: 120px;
     justify-content: center;
     // width: 513px;
     .left-desc {
@@ -125,7 +125,7 @@ img {
             margin-bottom: 58px;
         }
       .icon-item {
-        margin-left: 90px;
+        margin-left: 60px;
       }
     }
     .pic-m1 {
@@ -139,8 +139,8 @@ img {
   .word-title {
     color: #ffffff;
     h2 {
-      font-size: 60px;
-      margin: 50px 0 40px;
+      font-size: 55px;
+      margin: 0px 0 38px;
     }
     p {
       margin-bottom: 87px;
@@ -155,7 +155,7 @@ img {
   }
   .bg-2 {
     background: url("../assets/m1/2_1.png") no-repeat;
-    height: 1106px;
+    height: 1102px;
   }
   .bg-3 {
     background: url("../assets/m1/3_1.png") no-repeat;
@@ -163,7 +163,7 @@ img {
   }
   .bg-4 {
     background: url("../assets/m1/4_1.png") no-repeat;
-    height: 931px;
+    height: 927px;
     .word-title {
       width: 391px;
       margin-left: 300px;
