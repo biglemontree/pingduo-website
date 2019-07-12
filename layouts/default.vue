@@ -26,7 +26,9 @@
           </div>
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
-              <p class="navbar-item nuxt-link-active" to="/">智能门锁
+               <!-- <nuxt-link class="navbar-item nuxt-link-active" to="/">智能门锁</nuxt-link>
+                <nuxt-link class="navbar-item" to="/aboutus/company-produce">关于我们</nuxt-link> -->
+              <a class="navbar-item nuxt-link-active" href="./">智能门锁
                 <ul class="menu-list is-hidden-desktop" >
                     <li class="mt-18px">
                     <a href="./m1">智能指纹锁M1</a>
@@ -38,8 +40,8 @@
                     <a href="./t1">智能指纹锁T1</a>
                     </li>
                 </ul>
-              </p>
-              <p class="navbar-item" to="/aboutus/company-produce">关于我们
+              </a>
+              <a class="navbar-item" href="./aboutus/company-produce">关于我们
                 <ul class="menu-list is-hidden-desktop" >
                     <li class="mt-18px">
                     <a href="./aboutus/company-produce">公司简介</a>
@@ -54,7 +56,7 @@
                     <a href="./aboutus/service">售后服务</a>
                     </li>
                 </ul>
-              </p>
+              </a>
               <nuxt-link class="navbar-item" to="/join">品牌加盟</nuxt-link>
               <nuxt-link class="navbar-item down-app" to="/">
                 下载APP
@@ -104,22 +106,29 @@
           <div class="column is-4 relative">
             <div class="title">APP下载</div>
             <div class="app-qr">
-              <img class src="~/assets/footer/home.png" alt />
-              <img class src="~/assets/footer/qr-house.png" alt />
+                <div class="is-inline-block has-text-centered fs-16px">
+                    <img class src="~/assets/footer/home.png" alt />
+                    <div>华为-智能家居</div>
+                </div>
+                <div class="is-inline-block has-text-centered fs-16px">
+                    <img class src="~/assets/footer/qr-house.png" alt />
+                    <div>慧享家</div>
+                </div>
+
             </div>
           </div>
           <div class="column has-text-centered">
             <div class="title">关注公众号</div>
-            <div>
+            <div class="pd-wechat">
               <img src="~/assets/footer/qr-pd.png" alt />
             </div>
-            <p>PINTOS 服务公众号</p>
+            <p class="fs-16px">PINTOS 服务公众号</p>
           </div>
         </div>
-        <div class="columns copy">
-          <p class="column">©2017 PINTOS.ALL right reserved. 粤ICP备171758560号-1</p>
-          <p class="column">深圳市几何科技有限公司</p>
-          <p class="column tel">400 858 6766</p>
+        <div class="columns copy flex justify-between ">
+          <p class="py-20px">©2017 PINTOS.ALL right reserved. 粤ICP备171758560号-1</p>
+          <p class="py-20px ml-60px">深圳市几何科技有限公司</p>
+          <p class="pt-10px tel">400 858 6766</p>
         </div>
       </div>
       <aside class="menu is-mobile is-hidden-desktop ">
@@ -187,15 +196,15 @@
 
 <style scoped lang="less">
 .navbar {
-  background: #3e3e3e;
-  height: 60px;
+  background: #2c2c2c;
+  height: 52px;
   .container {
     height: 100%;
   }
 }
 .navbar-brand,
 .navbar-tabs {
-  height: 60px;
+  height: 50px;
 }
 .navbar-burger {
   color: #fff;
@@ -203,10 +212,11 @@
 .navbar-burger {
   height: 100%;
 }
+.navbar-end {margin-left: 0px;}
 .navbar-item {
   color: #888;
   font-size: 18px;
-  margin-right: 55px;
+  margin-right: 85px;
   img {
     max-height: none;
   }
@@ -231,6 +241,7 @@
   }
 }
 .online-buy {
+    margin-left: 100px;
   width: 100px;
   height: 29px;
   color: #fff;
@@ -246,16 +257,19 @@
   color: #838383;
 }
 .content {
-  padding-bottom: 14px;
+  padding-bottom: 34px;
   border-bottom: 1px solid #dadada;
 }
-.app-qr img {
-  width: 124px;
-  height: 124px;
+ .app-qr img{
   margin-right: 16px;
 }
+.app-qr img,
+.pd-wechat img {
+    width: 102px;
+    height: 102px;
+}
 .copy .tel {
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 500;
   color: rgba(106, 106, 106, 1);
 }

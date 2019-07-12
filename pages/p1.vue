@@ -201,8 +201,8 @@
     }
   }
   .pic-m1 {
-    width: 370px;
-    height: 666px;
+    width: 481px;
+    height: 765px;
   }
   .bg-1 {
     height: 1079px;

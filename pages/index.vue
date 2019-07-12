@@ -1,34 +1,36 @@
 <template>
   <div>
-    <div class="hero">
-      <div class="container  has-text-centered is-hidden-mobile">
-        <div class="top-lock flex justify-between items-center ">
-            <nuxt-link to="/m1">
-                <div class="center">
-                    <img src="~/assets/index/icon_m1.png" alt>
-                    <div>智能指纹锁 M1</div>
-                </div>
-            </nuxt-link>
-            <nuxt-link to="/p1">
+      <div class="sticky-top">
+        <div class="hero">
+        <div class="container  has-text-centered is-hidden-mobile">
+            <div class="top-lock flex justify-between items-center ">
+                <nuxt-link to="/m1">
+                    <div class="center">
+                        <img src="~/assets/index/icon_m1.png" alt>
+                        <div>智能指纹锁 M1</div>
+                    </div>
+                </nuxt-link>
+                <nuxt-link to="/p1">
+                    <div class="">
+                        <img src="~/assets/index/icon_p1.png" alt>
+                        <div>智能指纹锁 P1</div>
+                    </div>
+                </nuxt-link>
+            <nuxt-link to="/t1">
                 <div class="">
-                    <img src="~/assets/index/icon_p1.png" alt>
-                    <div>智能指纹锁 P1</div>
+                    <img src="~/assets/index/icon_t1.png" alt>
+                    <div>智能指纹锁 t1</div>
                 </div>
             </nuxt-link>
-          <nuxt-link to="/t1">
-            <div class="">
-                <img src="~/assets/index/icon_t1.png" alt>
-                <div>智能指纹锁 t1</div>
+            <!-- <div class="">
+                <img src="~/assets/index/icon_pj.png" alt>
+                <div>配件</div>
+            </div> -->
             </div>
-          </nuxt-link>
-          <!-- <div class="">
-            <img src="~/assets/index/icon_pj.png" alt>
-            <div>配件</div>
-          </div> -->
         </div>
+        </div>
+        <div class="bg-f2 gray-block is-hidden-mobile"></div>
       </div>
-    </div>
-    <div class="bg-f2 gray-block is-hidden-mobile"></div>
     <div class=" lock-body">
       <div class="container px-20px">
         <div class="is-flex-desktop justify-center item-wrap item-1">
@@ -116,21 +118,32 @@ export default {
 }
 .setArrow(@direction, @arrowsize, @borderColor,@borderWidth) when (@direction = right) {
     ._setArrow(@arrowsize, @borderColor, @borderWidth);
-    transform: matrix(0.71,0.71,-0.71,0.71,0,0); // rotate(45deg);
+    transform: matrix(0.71,0.71,-0.71,0.71, -1, 2); // rotate(45deg);
 
     position: relative;
 }
 @media screen and (min-width: 1024px) {
+    .sticky-top {
+        // position: sticky;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        top: 50px;
+        opacity: 0.75;
+        background: #FBFBFB;
+    }
     .container {
         justify-content: center;
         // width: 513px;
         .left-desc {
-            padding-top: 100px;
             margin-right: 62px;
         }
         .pic-p1 {
             margin-right: 36px;
         }
+    }
+    .left-desc {
+        padding-top: 100px;
     }
     .item-wrap {
         margin-bottom: 100px;
@@ -188,12 +201,12 @@ export default {
         color: #1AA0FB !important;
         text-align: center;
         &::after {
-        .setArrow(right,10px,#00A8EC,2px)
+        .setArrow(right,14px,#00A8EC,2px)
 
         }
     }
     .arrow {
-        .setArrow(right,10px,#00A8EC,2px)
+        .setArrow(right,14px,#00A8EC,2px)
 
     }
     font-size: 24px;
@@ -220,7 +233,7 @@ export default {
 }
 .top-lock {
   width: 500px;
-  height: 130px;
+  height: 120px;
   img {
       height: 64px;
   }

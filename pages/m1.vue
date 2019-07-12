@@ -11,7 +11,7 @@
         >手机CNC工艺 | 无把手设计 | 双重专利认证 | 人工智能算法</p>
         <div class="icons flex">
           <div class="has-text-centered">
-            <img src="~/assets/p1/icon_zwsb.png" alt />
+            <img src="~/assets/m1/icon_zwsb.png" alt />
             <div class="fs-16px">指纹开锁</div>
           </div>
           <div class="icon-item has-text-centered">

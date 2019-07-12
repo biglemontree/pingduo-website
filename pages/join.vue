@@ -10,11 +10,12 @@
 
 <style lang="less" scoped>
 .join {
-    background: url('../assets/join_banner.png')
+    background: url('../assets/join_banner.png');
+    height: 658px;
 }
 .word {
-    // position: absolute;
-    // width: 300px;
+    position: absolute;
+    width: 300px;
     justify-content: center;
     
     height: 150px;
@@ -26,6 +27,12 @@ h1 {
 }
 h2 {
     font-size: 18px;
+}
+@media screen and (max-width: 768px){
+    .join {
+        background: url('../assets/join_banner.png');
+        height: 328px;
+    }
 }
 </style>
 
